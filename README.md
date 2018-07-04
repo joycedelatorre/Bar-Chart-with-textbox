@@ -19,6 +19,9 @@
 	3. Average Price - the average price of the selected stocks
 	4. Stock with Highest Price - the name of the stock with the highest Price
 
+#### **Added Feature**
+* I added a textbox with a submit button so that users will be able to enter their updated JSON datasets 
+
 ### Preview
 
 #### Try this link: [Bar-Chart-with-textbox](https://joycedelatorre.github.io/Bar-Chart-with-textbox/)
