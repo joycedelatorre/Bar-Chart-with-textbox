@@ -21,6 +21,7 @@
 
 #### **Added Feature**
 * I added a textbox with a submit button so that users will be able to enter their updated JSON datasets 
+* Also when new charts are submitted the chart should clear the old chart and rerender a new chart with a new table.
 
 ### Preview
 
