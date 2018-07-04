@@ -14,6 +14,10 @@ $( "#txtAreaBtn" ).click(function() {
   });
   console.log(dataSet);
   $(".table-svg-chart").empty(); //--> clearing old chart to render new chart
+	$('.numSelect').empty();
+	$('.totPrice').empty();
+	$('.avePrice').empty();
+	$('.highPrice').empty();
 	// once sorted call the renderChart() to display the chart.
   renderChart();
   checkboxEvent();
