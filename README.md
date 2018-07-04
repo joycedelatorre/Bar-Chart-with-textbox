@@ -23,4 +23,4 @@
 
 #### Try this link: [Bar-Chart](https://joycedelatorre.github.io/Bar-Chart/)
 
-![preview](https://github.com/joycedelatorre/Bar-Chart/blob/master/images/preview.png "preview")
+![preview](https://github.com/joycedelatorre/Bar-Chart-with-textbox/blob/master/images/preview.png "preview")
