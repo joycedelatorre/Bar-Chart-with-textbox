@@ -8,19 +8,18 @@ $( "#txtAreaBtn" ).click(function() {
   // console.log(str);
   dataSet = JSON.parse(str.trim());
 
+	// first sort the dataset to achieve the descending order.
   dataSet.sort(function (a, b){
 		return parseFloat(b.marketCap) - parseFloat(a.marketCap);
   });
   console.log(dataSet);
-  $(".table-svg-chart").empty(); // so that it will render a new chart
+  $(".table-svg-chart").empty(); //--> clearing old chart to render new chart
+	// once sorted call the renderChart() to display the chart.
   renderChart();
   checkboxEvent();
 });
-// first sort the dataset to achieve the descending order.
-
 
 //console.log(dataSet); //--> to check sorted dataset
-// once sorted call the renderChart() to display the chart.
 
 function renderChart(){
 	for (var i = 0; i < dataSet.length; i++){
@@ -45,13 +44,13 @@ var highestPrice=0;
 		  $('.totPrice').append(sum);
 	}
 
-	function uncheckedSummation(data){
+	function uncheckedSummation(data){ //--> this fxn is to update the sum if inputs checked and later modified to unchecked.
 		sum = sum - dataSet[data.id].price;
 	  	$('.totPrice').empty();
 		  $('.totPrice').append(sum);
 	}
 
-	function ave(){
+	function ave(){ //--> average
 		average = sum/numberOfChecked
 		roundUp_mean = Math.ceil(average * 100)/100;
 		  $('.avePrice').empty();
