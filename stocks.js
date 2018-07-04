@@ -14,6 +14,7 @@ var dataSet;
 $(document).ready(function(){
 
 $( "#txtAreaBtn" ).click(function() {
+
   var str = $( "#jsonInput").val();
   // console.log(str);
   dataSet = JSON.parse(str.trim());
@@ -22,7 +23,9 @@ $( "#txtAreaBtn" ).click(function() {
 		return parseFloat(b.marketCap) - parseFloat(a.marketCap);
   });
   console.log(dataSet);
+  $(".table-svg-chart").empty(); // so that it will render a new chart
   renderChart();
+  checkboxEvent();
 });
 // first sort the dataset to achieve the descending order.
 
@@ -39,7 +42,7 @@ function renderChart(){
 	}
 }
 
-// renderChart();
+}); //end of document.ready
 //-----------------------------------------------------------------
 //Check box to render in the table
 
@@ -83,8 +86,8 @@ var highestPrice=0;
 		return highestPriceName;
 	}
 
-
-	$( ".chex" ).click(function() {
+function checkboxEvent(){
+$( ".chex" ).click(function() {
 	  numberOfChecked= $('input:checkbox:checked').length;
 	  $('.numSelect').empty();
 	  $('.numSelect').append(numberOfChecked);
@@ -103,6 +106,4 @@ var highestPrice=0;
 		 	$('.highPrice').append(checkHighestPrice());
 		//console.log(numberOfChecked);
 	}); //end of chex click event
-
-}); //end of document.ready
-
+}
