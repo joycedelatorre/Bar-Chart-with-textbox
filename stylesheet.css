@@ -1,0 +1,132 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+.banner{
+ text-align: center;
+}
+
+.tdName{
+  width:100px;
+  min-width: 100px;
+  text-align:right;
+  padding-right: 0px;
+  border-right: 2px solid black;
+
+}
+.tdSvg{
+  width:100%;
+  padding-left:0;
+}
+
+.tdCheckbox{
+  width:20px;
+}
+
+.table-svg-chart{
+  width:100%;
+}
+/* stylized each bar */
+.bar {
+  fill: #008080;
+  height: 21px;
+  transition: fill .3s ease;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+}
+
+.bar:hover,
+.bar:focus {
+  fill: #ff7f50 !important;
+}
+
+/*Tooltip*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width:100%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 85%;
+    left: 30%;
+    margin-left: -150px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left:50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*second table*/
+.table-stat-value{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 20%;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.table-stat-value td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.table-stat-value tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+/*TEXTBOX*/
+/*.txtbox{
+  margin-left: 50px;
+  margin-right: 100px;
+}
+*/
+
+textarea {
+    text-align:left;
+    overflow-y: scroll;
+    resize: both;
+}
+
+#jsonInput{
+  width:100%;
+  max-width: 500px;
+  font-size:12px;
+}
+
+.button {
+  border-radius: 5px;
+  background-color: #008CBA;
+  color:white;
+  font-size: 15px;
+  height:40px;
+  width:5%;
+}
