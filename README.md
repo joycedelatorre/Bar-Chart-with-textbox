@@ -21,6 +21,6 @@
 
 ### Preview
 
-#### Try this link: [Bar-Chart](https://joycedelatorre.github.io/Bar-Chart/)
+#### Try this link: [Bar-Chart-with-textbox](https://joycedelatorre.github.io/Bar-Chart-with-textbox/)
 
 ![preview](https://github.com/joycedelatorre/Bar-Chart-with-textbox/blob/master/images/preview.png "preview")
