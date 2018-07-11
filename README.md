@@ -8,15 +8,6 @@
 
 ![preview](https://github.com/joycedelatorre/Bar-Chart-with-textbox/blob/master/images/preview.png "preview")
 
-#### ** Instructions on how to run this app **
-	1. Clik the above link (Try this link).
-	2. A dataset is already provided but user can edit it.(Provided it is a valid json)
-	3. Once dataSet is entered click submit.
-	4. The user can check the checkbox to calculate the number of selected items, sum, average and highest Price.
-	5. If by any chance the link does not work. You can clone the repository by clicking the clone or download button. Copy the https URL provided from the toggled box.
-	6. In your CLI, type in `git clone https://github.com/joycedelatorre/Bar-Chart-with-textbox.git`  (This will create a folder locally)
-	7. Open index.html in your browser. 
-
 #### **With the following fields:**
 	1. name
 	2. price
@@ -37,4 +28,10 @@
 #### **Added Feature**
 * I added a textbox with a submit button so that users will be able to enter their updated JSON datasets 
 * Also when new charts are submitted the chart should clear the old chart and rerender a new chart with a new table.
+
+#### ** Instructions on how to run this app **
+	1. Clik the above link (Try this link).
+	2. A dataset is already provided but user can edit it.(Provided it is a valid json)
+	3. Once dataSet is entered click submit.
+	4. The user can check the checkbox to calculate the number of selected items, sum, average and highest Price. 
 
